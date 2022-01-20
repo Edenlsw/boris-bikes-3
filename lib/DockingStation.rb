@@ -1,7 +1,18 @@
 require './lib/Bike.rb'
 
 class DockingStation
+
+
   def release_bike
-    "released"
+    bike = Bike.new
+    bike.working?
+    # "released"
   end
+  
 end
+
+  # bike = Bike.new
+
+test = DockingStation.new
+
+p test.release_bike
